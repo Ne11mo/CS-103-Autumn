@@ -2,3 +2,4 @@
 # Trojan
 # Process
 # Backdoor
+grep -rlE 'Trojan|Process|Backdoor' . | while read f; do echo "${f#./}"; done
